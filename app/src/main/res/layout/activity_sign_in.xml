@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SignInActivity"
+    android:background="@drawable/back">
+
+
+    <ImageView
+        android:id="@+id/imgDailog_Imageview_id"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/shidologin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title_login_Dailog_textView_id"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="@string/LogIn"
+        android:gravity="center"
+        android:background="@color/colorDialog"
+        android:textColor="#C1C3C4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"/>
+
+
+
+
+    <EditText
+        android:id="@+id/enter_user_name_Dailog_EditText_id"
+        style="@style/myEditText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:drawableStart="@drawable/ic_man"
+        android:hint="@string/UserName"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/imgDailog_Imageview_id"
+        app:layout_constraintStart_toStartOf="@+id/imgDailog_Imageview_id"
+        app:layout_constraintTop_toBottomOf="@+id/imgDailog_Imageview_id" />
+
+    <EditText
+        android:id="@+id/enter_your_password_data_Dailog_EditText_id"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="@string/UserPassword"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/title_login_Dailog_textView_id"
+        app:layout_constraintStart_toStartOf="@+id/title_login_Dailog_textView_id"
+        app:layout_constraintTop_toBottomOf="@+id/enter_user_name_Dailog_EditText_id"
+        style="@style/myEditText"
+        android:drawableStart="@drawable/ic_lock"
+        />
+
+
+    <Button
+        android:id="@+id/login_Dailog_button_id"
+        style="@style/WhiteButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/LogIn"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enter_your_password_data_Dailog_EditText_id"
+
+        />
+
+    <TextView
+        android:id="@+id/forget_password_Dialog_textView_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgetPass"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:textSize="14dp"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/login_Dailog_button_id"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintTop_toBottomOf="@+id/login_Dailog_button_id"
+        />
+
+    <TextView
+        android:id="@+id/creat_account_Dailog_textview_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/creat_account"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:textSize="14sp"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintTop_toBottomOf="@+id/login_Dailog_button_id"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".activity.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imglogo"
+        android:layout_width="0dp"
+        android:layout_height="350dp"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logologin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/shido_botton_id"
+        style="@style/BlueButton"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:drawableStart="@drawable/ic_shido40"
+        android:drawableEnd="@drawable/ic__white_arrow"
+        android:drawablePadding="15sp"
+        android:padding="20dp"
+        android:textSize="17sp"
+        android:text="@string/loginWithshido"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imglogo" />
+
+    <Button
+        android:id="@+id/facebook_botton_id"
+        style="@style/WhiteButton"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:drawableStart="@drawable/ic_facebook"
+        android:drawableEnd="@drawable/ic_blue_arrow"
+        android:drawablePadding="5dp"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:text="@string/loginWithFacebook"
+        app:layout_constraintEnd_toEndOf="@+id/shido_botton_id"
+        app:layout_constraintStart_toStartOf="@+id/shido_botton_id"
+        app:layout_constraintTop_toBottomOf="@+id/shido_botton_id" />
+
+    <Button
+        android:id="@+id/google_botton_id"
+        style="@style/WhiteButton"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:drawableStart="@drawable/ic_google"
+        android:drawableEnd="@drawable/ic_blue_arrow"
+        android:drawablePadding="15sp"
+        android:padding="20dp"
+        android:text="@string/loginWithGoogle"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/shido_botton_id"
+        app:layout_constraintStart_toStartOf="@+id/shido_botton_id"
+        app:layout_constraintTop_toBottomOf="@+id/facebook_botton_id" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

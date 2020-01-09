@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        android:background="@color/colorBar"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/menu_Imageview_id"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:adjustViewBounds="true"
+                android:cropToPadding="false"
+                android:padding="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/barmenu" />
+
+        <ImageView
+            android:id="@+id/imglogoHome"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="false"
+            android:padding="10dp"
+            app:layout_constraintStart_toEndOf="@+id/menu_Imageview_id"
+            app:layout_constraintTop_toTopOf="@+id/menu_Imageview_id"
+            app:layout_constraintBottom_toBottomOf="@+id/menu_Imageview_id"
+            android:scaleType="fitCenter"
+            android:src="@drawable/barshidologo" />
+
+        <ImageView
+            android:id="@+id/imgChat"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="false"
+            android:padding="10dp"
+            app:layout_constraintStart_toEndOf="@+id/imglogoHome"
+            app:layout_constraintTop_toTopOf="@+id/imglogoHome"
+            app:layout_constraintBottom_toBottomOf="@+id/imglogoHome"
+            android:scaleType="fitCenter"
+            android:src="@drawable/barcall"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true" />
+
+        <ImageView
+            android:id="@+id/imgLoyality"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="false"
+            android:padding="10dp"
+            app:layout_constraintStart_toEndOf="@+id/imgChat"
+            app:layout_constraintTop_toTopOf="@+id/imgChat"
+            app:layout_constraintBottom_toBottomOf="@+id/imgChat"
+            android:scaleType="fitCenter"
+            android:src="@drawable/barloyality"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"/>
+
+        <ImageView
+            android:id="@+id/imgWallat"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="false"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintStart_toEndOf="@+id/imgLoyality"
+            app:layout_constraintTop_toTopOf="@+id/imgLoyality"
+            app:layout_constraintBottom_toBottomOf="@+id/imgLoyality"
+            android:src="@drawable/barwellet"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+</LinearLayout>

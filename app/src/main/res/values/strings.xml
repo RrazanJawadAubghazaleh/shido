@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">shido</string>
+    <!-- login -->
+    <string name="loginWithshido">Continue  with  Shido</string>
+    <string name="loginWithFacebook">Continue with Facebook</string>
+    <string name="loginWithGoogle">Continue  with  Google</string>
+
+    <!-- sign in  -->
+    <string name="EnterYourData">Enter your information</string>
+    <string name="Name">Enter your name</string>
+    <string name="UserNameEmail">User name/Email</string>
+    <string name="phonNumber">Mobile Number</string>
+    <string name="UserPassword">Password</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="signUn">Sign Up</string>
+
+
+    <string name="LogIn">Log In</string>
+    <string name="creat_account">Creat Account</string>
+    <string name="forgetPass">FORGOT PASSWORD?</string>
+    <string name="OR">OR</string>
+    <string name="UserName">user name</string>
+
+
+    <string name="tab_text_1">Chat</string>
+    <string name="tab_text_2">Call</string>
+    <string name="tab_text_3">Contacts</string>
+
+
+    <string name="tab_text_4">Cards</string>
+    <string name="tab_text_5">Merchants</string>
+    <string name="tab_text_6">Special offer</string>
+
+
+    <!-- home navigation-->
+
+    <string name="spn__my_account">MY ACCOUNT</string>
+    <string name="spn_SUBSCRIPTION">SUBSCRIPTION</string>
+    <string name="spn_header_notification">NOIFICATION</string>
+    <string name="spn_settings">SETTINGS</string>
+    <string name="spn_share_app">SHARE APP</string>
+
+
+    <string name="spn_PEIVACYTERMS">PEIVACY TERMS</string>
+    <string name="spn_TERMSANDCOMDITIONS">TERMS AND COMDITIONS</string>
+    <string name="spn_sign_out">SIGN OUT</string>
+    <string name="sure_sign_out">Are you sure you want to Sign Out ?</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
